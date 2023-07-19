@@ -1,6 +1,0 @@
-/home/bobliew/bppModule/CMakeFiles/cubeBpptest.dir
-/home/bobliew/bppModule/CMakeFiles/edit_cache.dir
-/home/bobliew/bppModule/CMakeFiles/rebuild_cache.dir
-/home/bobliew/bppModule/cubeBpp/CMakeFiles/cubeBpp.dir
-/home/bobliew/bppModule/cubeBpp/CMakeFiles/edit_cache.dir
-/home/bobliew/bppModule/cubeBpp/CMakeFiles/rebuild_cache.dir

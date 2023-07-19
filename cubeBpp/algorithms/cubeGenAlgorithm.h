@@ -13,24 +13,26 @@
 #include <chrono>
 #include <random>
 #include "../objects/objects.h"
+#include <boost/thread.hpp>
+#include <memory>
 
 class Utils {
 public:
     void GenSimpleBlock(const Box& container,
                         const std::vector<Box>& boxList,
-                        const std::vector<int>& num, 
+                        const std::vector<float>& num, 
                         std::vector<Block>& blockTable,
-                        const int& size
+                        const float& size
                         );
 
     void GenComplexBlock(const Box& container,
                          const std::vector<Box>& boxList,
-                         std::vector<int>& num,
+                         std::vector<float>& num,
                          std::vector<Block>& blockTable,
-                         const int& maxLevel,
+                         const float& maxLevel,
                          const float& minFillRate,
                          const float& minAreaRate,
-                         int size
+                         float size
                         );
     
     void genResidualSpace(const Box& space, 
@@ -40,34 +42,30 @@ public:
     void transferSpace(std::stack<Box>& spaceStack);
  
     std::vector<Block> genBlockList(Box& space,
-                                    std::vector<int>& num,
+                                    std::vector<float>& num,
                                     const std::vector<Box>& boxList,
-                                    int& isComplex,
+                                    const float& isComplex,
 
-                                    int size);
-    Plan basicHeuristic(Box& container,
-                        std::vector<int>& avail,
+                                    float size);
+    Plan* basicHeuristic(const Box& container,
+                        const std::vector<float>& avail,
                         const std::vector<Box>& boxList, 
-                        int isComplex);
+                        const float& isComplex);
 
-    Plan outLoop(int ts, 
-                 const float& tf, 
-                 const float& dt, 
-                 int loopTime, 
-                 int isComplex, 
-                 int isLinear,
+    Plan outLoop(const float& loopTime, 
+                 const float& isComplex, 
                  Box& container, 
-                 std::vector<int>& avail, 
+                 std::vector<float>& avail, 
                  std::vector<Box>& boxList);
 
     void gen3ddata(std::vector<Box>& boxList, 
-                   int tag, 
-                   int L, 
-                   int W, 
-                   int H);
+                   float tag, 
+                   float L, 
+                   float W, 
+                   float H);
 
 private:
-    //int size; 考虑储存在util
+    //float size; 考虑储存在util
 };
 
 

@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/cubeBpptest.dir/test/bppCube.cc.o cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o -o cubeBpptest 

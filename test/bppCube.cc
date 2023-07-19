@@ -2,6 +2,10 @@
 #include "../cubeBpp/algorithms/cubeGenAlgorithm.h"
 
 
+
+
+
+
 int main(int argc, char* argv[]) {
     // 创建一个container箱子，确定长度，宽度，高度；
     /*
@@ -15,11 +19,11 @@ int main(int argc, char* argv[]) {
     boxList.emplace_back(3, 13, 14, 15);
     boxList.emplace_back(4, 2, 5, 13);
 
-    std::vector<int> num{2, 2, 2, 2, 2};
+    std::vector<float> num{2, 2, 2, 2, 2};
 
     // 创建一个blockTable，用于存储生成的块
     std::vector<Block> blockTable;
-    int size = boxList.size();
+    float size = boxList.size();
     // 生成简单块
     // GenSimpleBlock(container, boxList, num, blockTable, size);
     // for (const Block& block : blockTable) {
@@ -38,12 +42,12 @@ int main(int argc, char* argv[]) {
     //std::cout << "Complex Block Table Size: " << blockTable.size() << std::endl;
     Plan plan = basicHeuristic(container, num, boxList, 1);
     std::cout << "basicheuristic" << "" << "\n";
-    int index = 0;
+    float index = 0;
     // std::cout << plan.getBoxes().size() << "\n";
     for (auto i : plan.getBoxes()) {
         index ++;
-        std::cout << "Block: "<< index << " Block Start Point: " << " x " << i.getStartPointX()
-                  << " y " << i.getStartPointY() << " z " << i.getStartPointZ() << "  Length: "
+        std::cout << "Block: "<< index << " Block Start Pofloat: " << " x " << i.getStartPofloatX()
+                  << " y " << i.getStartPofloatY() << " z " << i.getStartPofloatZ() << "  Length: "
                   << i.getLength() << " Width: " << i.getWidth() << " Height: " << i.getHeight()
                   << " \n" << "Require Vector :" ;
         for (auto element : i.require()) {
@@ -60,41 +64,40 @@ int main(int argc, char* argv[]) {
 
     float randNum1 = std::atof(argv[1]);
     //float randNum2 = std::atof(argv[2]);
-    Box container( 10, 20, 10);
+    Box container( 10, 10, 10);
     std::srand(randNum1);
     // 创建一个boxList，其中包含3种类型的箱子，每种箱子的数量分别是3, 2, 1
 
     //
 
-
+    // 为了加快计算，以cm为单位，不考虑单精度；
     Utils utils;
     std::vector<Box> boxList;
-    utils.gen3ddata(boxList, 0, 4, 2, 1);
-    utils.gen3ddata(boxList, 1, 6, 2, 1);
-    utils.gen3ddata(boxList, 2, 2, 3, 2);
-    utils.gen3ddata(boxList, 3, 3, 1, 3);
-    utils.gen3ddata(boxList, 4, 2, 1, 2);
+    utils.gen3ddata(boxList, 0, 1, 2, 6);
+    utils.gen3ddata(boxList, 1, 2, 1, 4);
+    utils.gen3ddata(boxList, 2, 1, 3, 1);
+    utils.gen3ddata(boxList, 3, 6, 4, 1);
+    utils.gen3ddata(boxList, 4, 2, 1, 5);
 
-
+    // 12 + 16 + 12 + 120 + 50
     // unordered_map {{tag, num}}
-    std::vector<int> num{1, 2, 4, 5, 5};
+    std::vector<float> num{1, 2, 4, 5, 5};
 
-    // std::vector<int> num{30, 30, 30, 30, 30};
+    // std::vector<float> num{30, 30, 30, 30, 30};
 
     // 创建一个blockTable，用于存储生成的块
     std::vector<Block> blockTable;
-    int size = boxList.size();
-    // param of sa
-    int ts = 10000;
-    float tf = 0.001;
-    float dt = 0.95;
-    int loopTime = 100;
-    int isComplex = 1;
-    int isLinear = 1;
+    float size = boxList.size();
+    float loopTime = 100; // 单次循环100次
+    float isComplex = 1;  // 1：采取复杂块 2：不采取复杂块
 
     auto start_time = std::chrono::steady_clock::now();
-    Plan best = utils.outLoop(ts, tf, dt, loopTime, isComplex, isLinear,
-                   container, num, boxList);
+
+    Plan best = utils.outLoop(loopTime, 
+                              isComplex,
+                              container,
+                              num, 
+                              boxList);
     auto end_time = std::chrono::steady_clock::now();
     auto elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time);
     std::cout << "程序运行时间为：" << elapsed_time.count() << " 毫秒" << std::endl;
