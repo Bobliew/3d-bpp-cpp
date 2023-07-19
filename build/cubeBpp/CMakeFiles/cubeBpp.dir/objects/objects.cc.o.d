@@ -1,7 +1,7 @@
 cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o: \
- /home/bobliew/3d-bpp-cpp/cubeBpp/objects/objects.cc \
+ /home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp/objects/objects.cc \
  /usr/include/stdc-predef.h \
- /home/bobliew/3d-bpp-cpp/cubeBpp/objects/./objects.h \
+ /home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp/objects/./objects.h \
  /usr/include/c++/11/iostream \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/11/bits/os_defines.h \

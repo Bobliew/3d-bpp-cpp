@@ -1,4 +1,4 @@
-# Install script for directory: /home/bobliew/3d-bpp-cpp
+# Install script for directory: /home/bobliew/gitTest/day2/3d-bpp-cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/bobliew/3d-bpp-cpp/build/cubeBpp/cmake_install.cmake")
+  include("/home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/bobliew/3d-bpp-cpp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/bobliew/gitTest/day2/3d-bpp-cpp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

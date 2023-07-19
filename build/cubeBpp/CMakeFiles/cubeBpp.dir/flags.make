@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB
 
-CXX_INCLUDES = -I/home/bobliew/3d-bpp-cpp/cubeBpp
+CXX_INCLUDES = -I/home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp
 
 CXX_FLAGS = -Wall -Wextra -pedantic
 

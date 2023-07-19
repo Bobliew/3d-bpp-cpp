@@ -47,10 +47,10 @@ public:
                                     const float& isComplex,
 
                                     float size);
-    Plan* basicHeuristic(const Box& container,
-                        const std::vector<float>& avail,
-                        const std::vector<Box>& boxList, 
-                        const float& isComplex);
+    std::unique_ptr<Plan> basicHeuristic(const Box& container,
+                          const std::vector<float>& avail,
+                          const std::vector<Box>& boxList, 
+                          const float& isComplex);
 
     Plan outLoop(const float& loopTime, 
                  const float& isComplex, 

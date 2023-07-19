@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bobliew/3d-bpp-cpp/cubeBpp
+CXX_INCLUDES = -I/home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp
 
-CXX_FLAGS = 
+CXX_FLAGS =  -g
 

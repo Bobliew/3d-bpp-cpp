@@ -57,10 +57,10 @@ RM = /snap/cmake/1315/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bobliew/3d-bpp-cpp
+CMAKE_SOURCE_DIR = /home/bobliew/gitTest/day2/3d-bpp-cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bobliew/3d-bpp-cpp/build
+CMAKE_BINARY_DIR = /home/bobliew/gitTest/day2/3d-bpp-cpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/bobliew/3d-bpp-cpp/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/snap/cmake/1300/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/1315/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobliew/3d-bpp-cpp/build/CMakeFiles /home/bobliew/3d-bpp-cpp/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobliew/gitTest/day2/3d-bpp-cpp/build/CMakeFiles /home/bobliew/gitTest/day2/3d-bpp-cpp/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobliew/3d-bpp-cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobliew/gitTest/day2/3d-bpp-cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

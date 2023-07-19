@@ -53,10 +53,10 @@ RM = /snap/cmake/1315/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bobliew/3d-bpp-cpp
+CMAKE_SOURCE_DIR = /home/bobliew/gitTest/day2/3d-bpp-cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bobliew/3d-bpp-cpp/build
+CMAKE_BINARY_DIR = /home/bobliew/gitTest/day2/3d-bpp-cpp/build
 
 # Include any dependencies generated for this target.
 include cubeBpp/CMakeFiles/cubeBpp.dir/depend.make
@@ -70,32 +70,32 @@ include cubeBpp/CMakeFiles/cubeBpp.dir/progress.make
 include cubeBpp/CMakeFiles/cubeBpp.dir/flags.make
 
 cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o: cubeBpp/CMakeFiles/cubeBpp.dir/flags.make
-cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o: /home/bobliew/3d-bpp-cpp/cubeBpp/objects/objects.cc
+cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o: /home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp/objects/objects.cc
 cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o: cubeBpp/CMakeFiles/cubeBpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bobliew/3d-bpp-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o"
-	cd /home/bobliew/3d-bpp-cpp/build/cubeBpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o -MF CMakeFiles/cubeBpp.dir/objects/objects.cc.o.d -o CMakeFiles/cubeBpp.dir/objects/objects.cc.o -c /home/bobliew/3d-bpp-cpp/cubeBpp/objects/objects.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bobliew/gitTest/day2/3d-bpp-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o"
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o -MF CMakeFiles/cubeBpp.dir/objects/objects.cc.o.d -o CMakeFiles/cubeBpp.dir/objects/objects.cc.o -c /home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp/objects/objects.cc
 
 cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cubeBpp.dir/objects/objects.cc.i"
-	cd /home/bobliew/3d-bpp-cpp/build/cubeBpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bobliew/3d-bpp-cpp/cubeBpp/objects/objects.cc > CMakeFiles/cubeBpp.dir/objects/objects.cc.i
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp/objects/objects.cc > CMakeFiles/cubeBpp.dir/objects/objects.cc.i
 
 cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cubeBpp.dir/objects/objects.cc.s"
-	cd /home/bobliew/3d-bpp-cpp/build/cubeBpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bobliew/3d-bpp-cpp/cubeBpp/objects/objects.cc -o CMakeFiles/cubeBpp.dir/objects/objects.cc.s
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp/objects/objects.cc -o CMakeFiles/cubeBpp.dir/objects/objects.cc.s
 
 cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o: cubeBpp/CMakeFiles/cubeBpp.dir/flags.make
-cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o: /home/bobliew/3d-bpp-cpp/cubeBpp/algorithms/cubeGenAlgorithm.cc
+cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o: /home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp/algorithms/cubeGenAlgorithm.cc
 cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o: cubeBpp/CMakeFiles/cubeBpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bobliew/3d-bpp-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o"
-	cd /home/bobliew/3d-bpp-cpp/build/cubeBpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o -MF CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o.d -o CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o -c /home/bobliew/3d-bpp-cpp/cubeBpp/algorithms/cubeGenAlgorithm.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bobliew/gitTest/day2/3d-bpp-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o"
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o -MF CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o.d -o CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o -c /home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp/algorithms/cubeGenAlgorithm.cc
 
 cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.i"
-	cd /home/bobliew/3d-bpp-cpp/build/cubeBpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bobliew/3d-bpp-cpp/cubeBpp/algorithms/cubeGenAlgorithm.cc > CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.i
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp/algorithms/cubeGenAlgorithm.cc > CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.i
 
 cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.s"
-	cd /home/bobliew/3d-bpp-cpp/build/cubeBpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bobliew/3d-bpp-cpp/cubeBpp/algorithms/cubeGenAlgorithm.cc -o CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.s
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp/algorithms/cubeGenAlgorithm.cc -o CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.s
 
 cubeBpp: cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o
 cubeBpp: cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o
@@ -107,10 +107,10 @@ cubeBpp/CMakeFiles/cubeBpp.dir/build: cubeBpp
 .PHONY : cubeBpp/CMakeFiles/cubeBpp.dir/build
 
 cubeBpp/CMakeFiles/cubeBpp.dir/clean:
-	cd /home/bobliew/3d-bpp-cpp/build/cubeBpp && $(CMAKE_COMMAND) -P CMakeFiles/cubeBpp.dir/cmake_clean.cmake
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp && $(CMAKE_COMMAND) -P CMakeFiles/cubeBpp.dir/cmake_clean.cmake
 .PHONY : cubeBpp/CMakeFiles/cubeBpp.dir/clean
 
 cubeBpp/CMakeFiles/cubeBpp.dir/depend:
-	cd /home/bobliew/3d-bpp-cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bobliew/3d-bpp-cpp /home/bobliew/3d-bpp-cpp/cubeBpp /home/bobliew/3d-bpp-cpp/build /home/bobliew/3d-bpp-cpp/build/cubeBpp /home/bobliew/3d-bpp-cpp/build/cubeBpp/CMakeFiles/cubeBpp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bobliew/gitTest/day2/3d-bpp-cpp /home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp /home/bobliew/gitTest/day2/3d-bpp-cpp/build /home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp /home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp/CMakeFiles/cubeBpp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : cubeBpp/CMakeFiles/cubeBpp.dir/depend
 

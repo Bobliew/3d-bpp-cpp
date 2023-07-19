@@ -115,10 +115,10 @@ public:
     ~Plan(){}
     void setVolume( double value) { volume = value;}
     void push(const Block& value) { boxes.push_back(value);}
-    double getVolume() const { return volume;}
-    std::vector<Block> getBoxes() { return boxes;}
+    double getVolume() { return volume;}
+    const std::vector<Block>& getBoxes() { return boxes;}
 private:
-    double volume = 0; // 一开始就超过了阈值，所以如果设置为0，永远会小于零
+    double volume = 0.0; // 一开始就超过了阈值，所以如果设置为0，永远会小于零
     std::vector<Block> boxes;
 };
 

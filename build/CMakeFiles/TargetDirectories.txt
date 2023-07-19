@@ -1,6 +1,6 @@
-/home/bobliew/3d-bpp-cpp/build/CMakeFiles/cubeBpptest.dir
-/home/bobliew/3d-bpp-cpp/build/CMakeFiles/edit_cache.dir
-/home/bobliew/3d-bpp-cpp/build/CMakeFiles/rebuild_cache.dir
-/home/bobliew/3d-bpp-cpp/build/cubeBpp/CMakeFiles/cubeBpp.dir
-/home/bobliew/3d-bpp-cpp/build/cubeBpp/CMakeFiles/edit_cache.dir
-/home/bobliew/3d-bpp-cpp/build/cubeBpp/CMakeFiles/rebuild_cache.dir
+/home/bobliew/gitTest/day2/3d-bpp-cpp/build/CMakeFiles/cubeBpptest.dir
+/home/bobliew/gitTest/day2/3d-bpp-cpp/build/CMakeFiles/edit_cache.dir
+/home/bobliew/gitTest/day2/3d-bpp-cpp/build/CMakeFiles/rebuild_cache.dir
+/home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp/CMakeFiles/cubeBpp.dir
+/home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp/CMakeFiles/edit_cache.dir
+/home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp/CMakeFiles/rebuild_cache.dir

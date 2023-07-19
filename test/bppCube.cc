@@ -1,12 +1,22 @@
 #include "../cubeBpp/objects/objects.h"
 #include "../cubeBpp/algorithms/cubeGenAlgorithm.h"
+#include <sys/resource.h>
 
-
-
+#include <sched.h>
+#include <iostream>
 
 
 
 int main(int argc, char* argv[]) {
+    cpu_set_t cpuset;
+    CPU_ZERO(&cpuset);
+    CPU_SET(0, &cpuset); // 设置第一个CPU核心
+    CPU_SET(1, &cpuset); // 设置第二个CPU核心
+    if (sched_setaffinity(0, sizeof(cpuset), &cpuset) != 0) {
+        std::cerr << "Failed to set CPU affinity" << std::endl;
+        return 1;
+    }
+
     // 创建一个container箱子，确定长度，宽度，高度；
     /*
     Box container( 200, 200, 200);
@@ -88,8 +98,8 @@ int main(int argc, char* argv[]) {
     // 创建一个blockTable，用于存储生成的块
     std::vector<Block> blockTable;
     float size = boxList.size();
-    float loopTime = 100; // 单次循环100次
-    float isComplex = 1;  // 1：采取复杂块 2：不采取复杂块
+    float loopTime = 200; // 单次循环100次
+    float isComplex = 0;  // 1：采取复杂块 2：不采取复杂块
 
     auto start_time = std::chrono::steady_clock::now();
 

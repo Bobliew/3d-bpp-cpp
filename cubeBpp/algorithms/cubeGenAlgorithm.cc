@@ -298,9 +298,9 @@ std::vector<Block> Utils::genBlockList(Box& space,
 }
 
 
-Plan* Utils::basicHeuristic(const Box& container, const std::vector<float>& avail,
+std::unique_ptr<Plan> Utils::basicHeuristic(const Box& container, const std::vector<float>& avail,
                    const std::vector<Box>& boxList, const float& isComplex) {
-    Plan* plan = new Plan;
+    std::unique_ptr<Plan> plan = std::make_unique<Plan>();
     std::stack<Box> spaceStack;
     //std::srand(std::time(nullptr));
     // 但是每次都会生成不同的blockList；
@@ -375,8 +375,8 @@ Plan Utils::outLoop(const float& loopTime,
                     std::vector<float>& avail, 
                     std::vector<Box>& boxList) {
 
-    Box containerB = container;
-    std::vector<float> availB = avail;
+    //Box containerB = container;
+    //std::vector<float> availB = avail;
 
     /* 常规循环
     Plan plan = basicHeuristic(containerB, availB, boxList, isComplex);
@@ -398,11 +398,12 @@ Plan Utils::outLoop(const float& loopTime,
     */
 
     // 设定boost可使用的线程数；
+
     boost::thread_group threads;
     std::vector<std::unique_ptr<Plan>> plans;
     for( int i = 1; i < loopTime; ++i) {
-        threads.create_thread([this, &plans, containerB, availB, boxList, isComplex] {
-            std::unique_ptr<Plan> plan(basicHeuristic(containerB, availB, boxList, isComplex));
+        threads.create_thread([this, &plans, &container, &avail, &boxList, &isComplex] {
+            std::unique_ptr<Plan> plan(basicHeuristic(container, avail, boxList, isComplex));
             plans.push_back(std::move(plan));
         });
     }

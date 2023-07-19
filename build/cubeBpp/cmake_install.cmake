@@ -1,4 +1,4 @@
-# Install script for directory: /home/bobliew/3d-bpp-cpp/cubeBpp
+# Install script for directory: /home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

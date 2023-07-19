@@ -7,11 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/bobliew/3d-bpp-cpp/CMakeLists.txt"
+  "/home/bobliew/gitTest/day2/3d-bpp-cpp/CMakeLists.txt"
   "CMakeFiles/3.27.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.0/CMakeSystem.cmake"
-  "/home/bobliew/3d-bpp-cpp/cubeBpp/CMakeLists.txt"
+  "/home/bobliew/gitTest/day2/3d-bpp-cpp/cubeBpp/CMakeLists.txt"
   "/snap/cmake/1315/share/cmake-3.27/Modules/CMakeCInformation.cmake"
   "/snap/cmake/1315/share/cmake-3.27/Modules/CMakeCXXInformation.cmake"
   "/snap/cmake/1315/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"

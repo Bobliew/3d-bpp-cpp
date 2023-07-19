@@ -57,10 +57,10 @@ RM = /snap/cmake/1315/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bobliew/3d-bpp-cpp
+CMAKE_SOURCE_DIR = /home/bobliew/gitTest/day2/3d-bpp-cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bobliew/3d-bpp-cpp/build
+CMAKE_BINARY_DIR = /home/bobliew/gitTest/day2/3d-bpp-cpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/bobliew/3d-bpp-cpp/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/snap/cmake/1300/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/1315/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bobliew/3d-bpp-cpp/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bobliew/3d-bpp-cpp/build/CMakeFiles /home/bobliew/3d-bpp-cpp/build/cubeBpp//CMakeFiles/progress.marks
-	cd /home/bobliew/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cubeBpp/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobliew/3d-bpp-cpp/build/CMakeFiles 0
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bobliew/gitTest/day2/3d-bpp-cpp/build/CMakeFiles /home/bobliew/gitTest/day2/3d-bpp-cpp/build/cubeBpp//CMakeFiles/progress.marks
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cubeBpp/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobliew/gitTest/day2/3d-bpp-cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bobliew/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cubeBpp/clean
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cubeBpp/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bobliew/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cubeBpp/preinstall
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cubeBpp/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bobliew/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cubeBpp/preinstall
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cubeBpp/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bobliew/3d-bpp-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 cubeBpp/CMakeFiles/cubeBpp.dir/rule:
-	cd /home/bobliew/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cubeBpp/CMakeFiles/cubeBpp.dir/rule
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cubeBpp/CMakeFiles/cubeBpp.dir/rule
 .PHONY : cubeBpp/CMakeFiles/cubeBpp.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ cubeBpp: cubeBpp/CMakeFiles/cubeBpp.dir/rule
 
 # fast build rule for target.
 cubeBpp/fast:
-	cd /home/bobliew/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/build
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/build
 .PHONY : cubeBpp/fast
 
 algorithms/cubeGenAlgorithm.o: algorithms/cubeGenAlgorithm.cc.o
@@ -135,7 +135,7 @@ algorithms/cubeGenAlgorithm.o: algorithms/cubeGenAlgorithm.cc.o
 
 # target to build an object file
 algorithms/cubeGenAlgorithm.cc.o:
-	cd /home/bobliew/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.o
 .PHONY : algorithms/cubeGenAlgorithm.cc.o
 
 algorithms/cubeGenAlgorithm.i: algorithms/cubeGenAlgorithm.cc.i
@@ -143,7 +143,7 @@ algorithms/cubeGenAlgorithm.i: algorithms/cubeGenAlgorithm.cc.i
 
 # target to preprocess a source file
 algorithms/cubeGenAlgorithm.cc.i:
-	cd /home/bobliew/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.i
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.i
 .PHONY : algorithms/cubeGenAlgorithm.cc.i
 
 algorithms/cubeGenAlgorithm.s: algorithms/cubeGenAlgorithm.cc.s
@@ -151,7 +151,7 @@ algorithms/cubeGenAlgorithm.s: algorithms/cubeGenAlgorithm.cc.s
 
 # target to generate assembly for a file
 algorithms/cubeGenAlgorithm.cc.s:
-	cd /home/bobliew/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.s
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/algorithms/cubeGenAlgorithm.cc.s
 .PHONY : algorithms/cubeGenAlgorithm.cc.s
 
 objects/objects.o: objects/objects.cc.o
@@ -159,7 +159,7 @@ objects/objects.o: objects/objects.cc.o
 
 # target to build an object file
 objects/objects.cc.o:
-	cd /home/bobliew/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.o
 .PHONY : objects/objects.cc.o
 
 objects/objects.i: objects/objects.cc.i
@@ -167,7 +167,7 @@ objects/objects.i: objects/objects.cc.i
 
 # target to preprocess a source file
 objects/objects.cc.i:
-	cd /home/bobliew/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.i
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.i
 .PHONY : objects/objects.cc.i
 
 objects/objects.s: objects/objects.cc.s
@@ -175,7 +175,7 @@ objects/objects.s: objects/objects.cc.s
 
 # target to generate assembly for a file
 objects/objects.cc.s:
-	cd /home/bobliew/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.s
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(MAKE) $(MAKESILENT) -f cubeBpp/CMakeFiles/cubeBpp.dir/build.make cubeBpp/CMakeFiles/cubeBpp.dir/objects/objects.cc.s
 .PHONY : objects/objects.cc.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bobliew/3d-bpp-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bobliew/gitTest/day2/3d-bpp-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
